@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "policyName": "Life Care",
+    "duration": 10,
+    "sumAssured": 20000
+  },
+  {
+    "id": 3,
+    "policyName": "HDFC Care",
+    "duration": 11,
+    "sumAssured": 30000
+  },
+  {
+    "id": 4,
+    "policyName": "ICICI Care",
+    "duration": 12,
+    "sumAssured": 40000
+  }
+]
