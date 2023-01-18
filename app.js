@@ -28,6 +28,13 @@ app.get("/api/:id", (req, res) => {
   const id = req.params.id * 1;
   const policy = policies.find((el) => el.id === id);
 
+  if (!policy) {
+    return res.status(404).json({
+      status: "fail",
+      message: "Invalid Id",
+    });
+  }
+
   res.status(200).json({
     status: "sucess",
     data: {
