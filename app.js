@@ -1,9 +1,11 @@
 const express = require("express");
 const fs = require("fs");
-
+const cors = require("cors");
 const app = express();
 
 app.use(express.json());
+
+app.use(cors());
 
 const policies = JSON.parse(fs.readFileSync(`${__dirname}/policy-data.json`));
 const homePage = fs.readFileSync(`${__dirname}/index.html`);
